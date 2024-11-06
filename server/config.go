@@ -64,6 +64,7 @@ var Config = struct {
 	Pipeline struct {
 		AuthenticatePublicRepos             bool
 		DefaultCancelPreviousPipelineEvents []model.WebhookEvent
+		DefaultWorkflowLabels               map[string]string
 		DefaultCloneImage                   string
 		Limits                              model.ResourceLimit
 		Volumes                             []string
